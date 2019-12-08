@@ -10,3 +10,7 @@ def initialize(name)
 end
 end 
   
+  def self.all
+    @@all
+  end
+  
