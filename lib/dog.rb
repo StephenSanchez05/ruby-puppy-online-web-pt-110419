@@ -8,6 +8,7 @@ attr_accessor :name
 
 def initialize(name)
   @name = name
+  @@dog_name << name
   @@all << self 
 end
 
@@ -17,7 +18,7 @@ end
   end
   
   def self.print_all
-    print @@all.join 
+    print @@dog_name
   end
   
   def self.clear_all
