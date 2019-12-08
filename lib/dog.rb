@@ -18,7 +18,7 @@ end
   end
   
   def self.print_all
-    print @@dog_name.join(, )
+    print @@dog_name.join(", ")
   end
   
   def self.clear_all
