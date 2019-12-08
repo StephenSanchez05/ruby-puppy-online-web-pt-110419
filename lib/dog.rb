@@ -14,10 +14,6 @@ def initialize(name)
   end
 end
 
-  def save
-    @@all << @name
-  end
-  
   def self.all
     @@all
   end
@@ -29,5 +25,11 @@ end
   def self.clear_all
     @@all.clear 
   end
+  
+  private 
+    def save
+    @@all << @name
+  end
+  
   
 end
