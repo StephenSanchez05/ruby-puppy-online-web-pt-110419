@@ -8,12 +8,15 @@ attr_accessor :name
 
 def initialize(name)
   @name = name
-  @@all << self 
+  save
   unless @@dog_name.include?(name)
   @@dog_name << name
   end
 end
 
+  def save
+    @@all << @name
+  end
   
   def self.all
     @@all
